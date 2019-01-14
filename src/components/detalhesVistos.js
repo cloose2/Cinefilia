@@ -38,7 +38,7 @@ class detalhesFilmes extends Component{
             <ScrollView style={{backgroundColor:'#DDD',marginTop:50}}>
             <StatusBar backgroundColor='#404042'/>
             <View style={{flex:1}}>
-            <View style ={{flex:2,alignItems:'center'}}>
+            <View style ={{flex:3,alignItems:'center'}}>
                 <Text style={{fontSize:25,color:'#F25D4D',marginBottom:10}}>{this.props.titulo}</Text>
                 <Image style={{width:300,height:300,borderRadius: 30,marginBottom:10}} source={{uri:'https://image.tmdb.org/t/p/w500/'+this.props.imagem}}/>
             </View>

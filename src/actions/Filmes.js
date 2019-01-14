@@ -27,8 +27,9 @@ export const vistos = ({tituloFilme,sobre,imagem})=>{
 }
 
 export const FilmesVistos = () =>{
-    const{currentUser} = firebase.auth();
+    
     return(dispatch) => {
+        const{currentUser} = firebase.auth();
         let emailUsuarioB64 = b64.encode(currentUser.email);
         firebase.database().ref('/vistos/'+emailUsuarioB64)
             .on("value",(snapshot)=>{
